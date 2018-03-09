@@ -81,5 +81,5 @@ Test - mvn test
 |Thread safety 	|	Yes					      |		Yes									                |
 
 
-
+ConcurrentSkipListMap also supports additional functions like TailMap() and HeadMap() which can be used for slicing map data. 
 
