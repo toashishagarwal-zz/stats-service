@@ -56,6 +56,7 @@ Frameworks - Spring Boot, REST
 
 ## Maven commands
 Build - mvn clean install
+
 Test - mvn test
 
 ## Analysis and Datastructure selection
