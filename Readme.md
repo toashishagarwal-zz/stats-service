@@ -71,8 +71,8 @@ Test - mvn test
 
 - ConcurrentSkipListMap
 
-Comparison-
-|	Parameter	    |	ConcurrentHashMap	|	ConcurrentSkipListMap					        |
+## Comparison-
+|	**Parameter**	    |	**ConcurrentHashMap**	|	**ConcurrentSkipListMap**					        |
 
 |	Ordering	    |	unsorted			    |		sorted								              |
 
