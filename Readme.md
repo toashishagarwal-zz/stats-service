@@ -72,10 +72,13 @@ Test - mvn test
 - ConcurrentSkipListMap
 
 Comparison-
-|	Parameter	|	ConcurrentHashMap	|	ConcurrentSkipListMap					|
-|	Ordering	|	unsorted			|		sorted								|
-|  Performance	|	O(1)				|	    avg	log(n)	for most operations		|
-|Thread safety 	|	Yes					|		Yes									|
+|	Parameter	    |	ConcurrentHashMap	|	ConcurrentSkipListMap					        |
+
+|	Ordering	    |	unsorted			    |		sorted								              |
+
+|  Performance	|	O(1)				      |	    avg	log(n)	for most operations		|
+
+|Thread safety 	|	Yes					      |		Yes									                |
 
 
 
