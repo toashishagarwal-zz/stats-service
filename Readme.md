@@ -1,29 +1,30 @@
-Problem Statement:
+## Problem Statement
 Calculate real-time statistic from the last 60 seconds
 
-Objective
+## Objective
 Create 2 APIs -
 1) To make a transaction
 2) Get the statistic based of the transactions of the last 60 seconds
 
-API Endpoints
-1) POST /transactions
+## API Endpoints
+###### 1) POST /transactions
 
 Example Request Body
-
+```
 {
 "amount": 12.3,
 "timestamp": 1478192204000
 }
+```
 
 Example Response : 
 201 - in case of success
 204 - if transaction is older than 60sec		
 
-2) GET /statistics
+###### 2) GET /statistics
 
 Example Response :
-
+```
 {
 "sum": 1000,
 "avg": 100,
@@ -31,33 +32,33 @@ Example Response :
 "min": 50,
 "count": 10
 }
-
+```
 Where:
-- sum is a double specifying the total sum of transaction value in the last 60 seconds
-- avg is a double specifying the average amount of transaction value in the last 60
+- **sum** is a double specifying the total sum of transaction value in the last 60 seconds
+- **avg** is a double specifying the average amount of transaction value in the last 60
 seconds
-- max is a double specifying single highest transaction value in the last 60 seconds
-- min is a double specifying single lowest transaction value in the last 60 seconds
-- count is a long specifying the total number of transactions happened in the last 60
+- **max** is a double specifying single highest transaction value in the last 60 seconds
+- **min** is a double specifying single lowest transaction value in the last 60 seconds
+- **count** is a long specifying the total number of transactions happened in the last 60
 seconds
 
-Contraints
+## Contraints
 - GET /statistics should execute in constant time and space
 - The API should be threadsafe
 - The API should be able to deal with time discrepancy, which means, at any point of time, we could receive a transaction which have a timestamp of the past
 - No database (Not even in-memory database)
 - Endpoints have to execute in constant time and memory (O(1))
 
-Technologies used
+## Technologies used
 Build Tool - Maven
 Programming Language - Java
 Frameworks - Spring Boot, REST
 
-Maven commands
+## Maven commands
 Build - mvn clean install
 Test - mvn test
 
-Analysis and Datastructure selection
+## Analysis and Datastructure selection
 - API should be threadsafe. May be synchronised (degrades performance) or Lock or concurrent package object? May be ConcurrentHashMap (since its the optimized version for multi-threaded apps?)
 - API should be able to deal with time discrepancy. So Ordering is important. ConcurrentHashMap ordering is not guaranteed. Search further?
 - Endpoints to execute in constant time and memory-O(1). So Hash-based map data structure may be?
