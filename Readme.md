@@ -72,13 +72,9 @@ Test - mvn test
 - ConcurrentSkipListMap
 
 ## Comparison-
-|	**Parameter**	    |	**ConcurrentHashMap**	|	**ConcurrentSkipListMap**					        |
+**ConcurrentHashMap** - unsorted, O(1), Thread-safe
 
-|	Ordering	    |	unsorted			    |		sorted								              |
-
-|  Performance	|	O(1)				      |	    avg	log(n)	for most operations		|
-
-|Thread safety 	|	Yes					      |		Yes									                |
+**ConcurrentSkipListMap** - sorted, log(n)	for most operations, Thread-safe
 
 
 ConcurrentSkipListMap also supports additional functions like TailMap() and HeadMap() which can be used for slicing map data. 
