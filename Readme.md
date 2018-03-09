@@ -82,4 +82,6 @@ Test - mvn test
 
 
 ConcurrentSkipListMap also supports additional functions like TailMap() and HeadMap() which can be used for slicing map data. 
+Because of these shortlisted ConcurrentSkipListMap to store the transactions.
+Also, since we need to focus only on transactions in last 60 sec, used the @Scheduled annotation to clear off the old transactions every 10 sec.
 
