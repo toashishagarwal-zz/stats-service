@@ -51,7 +51,9 @@ seconds
 
 ## Technologies used
 Build Tool - Maven
+
 Programming Language - Java
+
 Frameworks - Spring Boot, REST
 
 ## Maven commands
