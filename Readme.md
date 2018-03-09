@@ -64,8 +64,10 @@ Test - mvn test
 - API should be able to deal with time discrepancy. So Ordering is important. ConcurrentHashMap ordering is not guaranteed. Search further?
 - Endpoints to execute in constant time and memory-O(1). So Hash-based map data structure may be?
 - As per https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ConcurrentMap.html ConcurrentMap has 2 implementations -
-		- ConcurrentHashMap
-		- ConcurrentSkipListMap
+
+- ConcurrentHashMap
+
+- ConcurrentSkipListMap
 
 Comparison-
 |	Parameter	|	ConcurrentHashMap	|	ConcurrentSkipListMap					|
