@@ -18,7 +18,9 @@ Example Request Body
 ```
 
 Example Response : 
+
 201 - in case of success
+
 204 - if transaction is older than 60sec		
 
 ###### 2) GET /statistics
